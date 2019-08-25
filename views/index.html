@@ -1,0 +1,72 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Header Parser</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import Google fonts and awesome icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">        
+    <link href="https://fonts.googleapis.com/css?family=Electrolize" rel="stylesheet" type="text/css">        
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">        
+
+  </head>
+
+  <body>
+    
+    <div id="container">
+      <h1>Request Header Parser Microservice</h1>
+      <h3>FreeCodeCamp APIs & Microservices Project</h3>
+      
+      <p>
+        The Request Header Parser App can get the IP address, preferred languages and system infos from the user's device.
+        To use this app, append api/whoami at the end of the url. In other words, the API endpoint is: <br>
+        <code>GET [project_url]/api/whoami</code>
+      </p>
+            
+      <ol>
+        <li>The preferred language is obtained from the header Accept-Language.</li>
+        <li>The system info is extracted from the header User-Agent.</li>
+      </ol>
+      
+      <h3>Example of Usage:</h3>
+      <a href="https://headerparsermel.glitch.me/api/whoami" target="_blank">
+        https://headerparsermel.glitch.me/api/whoami
+      </a>
+      
+      <h3>Example Response:</h3>
+      <p><code>
+        {"ipaddress":"159.20.14.100","language":"en-US,en;q=0.5",
+        "software":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0"}
+      </code></p>
+    </div>
+    
+    <footer>
+      <div id="footer-row1">
+        <a class="button" href="https://www.freecodecamp.com/meleany" target="_blank"> <i class="fa fa-free-code-camp fa-2x fa-fw"></i> </a> 
+        <a class="button" href="https://github.com/meleany" target="_blank"> <i class="fa fa-github-alt fa-2x fa-fw"></i> </a>
+        <a class="button" href="https://codepen.io/meleany" target="_blank"> <i class="fa fa-codepen fa-2x fa-fw"></i> </a>
+        <a class="button" href="https://ymelbart.wordpress.com/" target="_blank"> <i class="fa fa-wordpress fa-2x fa-fw"></i> </a>
+      </div>
+      <div id="footer-row2">
+        Yasmin Melean &copy 2019. All rights reserved.
+      </div>
+    </footer> 
+    
+  </body>
+</html>

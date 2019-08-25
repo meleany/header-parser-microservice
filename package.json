@@ -1,0 +1,26 @@
+{
+  "name": "request-header-parser-microservice",
+  "version": "1.0.0",
+  "description": "FCC Apis and Microservices Curriculum. Project 02: Request Header Parser Microservice",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "cors": "^2.8.5"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://github.com/meleany/header-parser-microservice"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ],
+  "author": "Yasmin M."
+}
